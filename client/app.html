@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!--  <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css"> --> <!-- For running locally -->
+    <script src="{{ url_for('static',filename='app.js') }}"></script>
+	<link rel="stylesheet"  href= "{{ url_for('static',filename='app.css') }}"> <!-- For integrating Flask and HTML -->
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+	<h2>Applicant Income</h2>
+    <input class="area"  type="email" id="uiAppInc" class="floatLabel" name="ApplicantIncome" value="3000">
+	<h2>Coapplicant Income</h2>
+    <input class="area"  type="email" id="uiCoAppInc" class="floatLabel" name="CoapplicantIncome" value="3000">
+	<h2>Loan Amount</h2>
+    <input class="area"  type="email" id="uiLoanAmount" class="floatLabel" name="LoanAmount" value="500">
+	<h2>LoanAmount Term</h2>
+    <input class="area"  type="email" id="uiLoanAmountTerm" class="floatLabel" name="LoanAmountTerm" value="365">
+	<h2>Gender</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-gender-male" name="uiGender" value="1" checked/>
+		<label for="radio-gender-male">Male</label>
+		<input type="radio" id="radio-gender-female" name="uiGender" value="0"/>
+		<label for="radio-gender-female">Female</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Married</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-married-yes" name="uiMarried" value="1" checked/>
+		<label for="radio-married-yes">Yes</label>
+		<input type="radio" id="radio-married-no" name="uiMarried" value="0"/>
+		<label for="radio-married-no">No</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Dependents</h2>
+	<div class="switch-field">
+	    <input type="radio" id="radio-dependents-0" name="uiDependents" value="0" checked/>
+		<label for="radio-dependents-0">0</label>
+		<input type="radio" id="radio-dependents-1" name="uiDependents" value="1"/>
+		<label for="radio-dependents-1">1</label>
+		<input type="radio" id="radio-dependents-2" name="uiDependents" value="2"/>
+		<label for="radio-dependents-2">2</label>
+		<input type="radio" id="radio-dependents-3" name="uiDependents" value="3"/>
+		<label for="radio-dependents-3">3+</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Education</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-education-graduate" name="uiGraduate" value="1" checked/>
+		<label for="radio-education-graduate">Graduate</label>
+		<input type="radio" id="radio-education-not_graduate" name="uiGraduate" value="0"/>
+		<label for="radio-education-not_graduate">Not Graduate</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Self Employed</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-self_employed-yes" name="uiSelfEmployed" value="1"/>
+		<label for="radio-self_employed-yes">Yes</label>
+		<input type="radio" id="radio-self_employed-no" name="uiSelfEmployed" value="0" checked/>
+		<label for="radio-self_employed-no">No</label>
+	</div>
+	</form>
+<form class="form">
+	<h2>Credit History</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-credit_history-yes" name="uiCreditHistory" value="1"/>
+		<label for="radio-credit_history-yes">Yes</label>
+		<input type="radio" id="radio-credit_history-no" name="uiCreditHistory" value="0" checked/>
+		<label for="radio-credit_history-no">No</label>
+	</div>
+		<h2>Property Area</h2>
+	<div>
+  <select class="area" name="" id="uiPropertyArea">
+    <option value="" disabled="disabled" selected="selected">Choose a property area</option>
+		<option value="2">Rural</option>
+        <option value="1">Semiurban</option>
+		<option value="0">Urban</option>
+  </select>
+</div>
+
+	<button class="submit" onclick="onClickedEstimateLoanStatus()" type="button">Estimate Loan Status</button>
+	<div id="uiEstimatedLoanStatus" class="result">	<h2></h2> </div>
+</body>
+</html>
