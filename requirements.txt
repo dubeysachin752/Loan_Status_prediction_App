@@ -14,4 +14,3 @@ requests==2.23.0
 Werkzeug==1.0.1
 wincertstore==0.2
 Flask-Cors==3.0.8
-python-3.6.12
