@@ -62,7 +62,7 @@ h2 {
 .area{
   font-family: "Roboto", sans-serif;
   outline: 0;
-  background: #f2f2f2;
+  background: #4d79ff;
   width: 76%;
   border: 0;
   margin: 0 0 10px;
@@ -101,12 +101,12 @@ h2 {
 
 .result{
 		background: #47d147;
-		width: 85%;
+		width: 100%;
 		border: 0;
 		margin: 25px 0 10px;
 		box-sizing: border-box;
-		font-size: 15px;
-		height: 40px;
+		font-size: 25px;
+		height: 50px;
 		text-align: center;
 }
 
