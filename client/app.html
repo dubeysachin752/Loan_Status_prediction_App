@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+	.header {
+  padding: 30px;
+  text-align: center;
+  background: white;}
+	.header h1 {
+  font-size: 50px;}
+	.topnav {
+  overflow: hidden;
+  background-color: #333;}
+	/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+	
     <title>Loan Application</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <!--  <script src="app.js"></script>
@@ -9,6 +28,14 @@
 	<link rel="stylesheet"  href= "{{ url_for('static',filename='app.css') }}"> <!-- For integrating Flask and HTML -->
 </head>
 <body>
+<div class="header">
+  <h1>Application Status</h1>
+  <p>Put your details and see the Loan Status.</p>
+</div>
+<div class="topnav">
+  <a href="#">https://www.linkedin.com/in/sachin-dubey-2b883b1b0/</a>
+  
+</div>
 <div class="img"></div>
 <form class="form">
 	<h2>Applicant Income</h2>
