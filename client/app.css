@@ -160,9 +160,13 @@ h2 {
   z-index: -1;
 }
 .footer {
-  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  color: white;
   text-align: center;
-  background-color: gray;
   }
   
 }
