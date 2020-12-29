@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 .switch-field {
 	display: flex;
 	margin-bottom: 36px;
