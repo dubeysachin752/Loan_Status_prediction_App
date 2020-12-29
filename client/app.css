@@ -100,14 +100,15 @@ h2 {
 }
 
 .result{
-		background: #47d147;
-		width: 100%;
-		border: 0;
-		margin: 25px 0 10px;
-		box-sizing: border-box;
-		font-size: 25px;
-		height: 50px;
-		text-align: center;
+	background: #47d147;
+	width: 100%;
+	border: 0;
+	margin: 25px 0 10px;
+	box-sizing: border-box;
+	font-size: 25px;
+	height: 50px;
+	text-align: center;
+	border-radius: 5px;
 }
 
 .img {
@@ -115,11 +116,11 @@ h2 {
   background-repeat: no-repeat;
   background-size: auto;
   background-size:100% 100%;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(3px);
-  filter: blur(10px);
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(5px);
   position: fixed;
   width: 100%;
   height: 100%;
