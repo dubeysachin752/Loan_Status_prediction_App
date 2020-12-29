@@ -160,9 +160,9 @@ h2 {
   z-index: -1;
 }
 .footer {
-  position: sticky;
+  position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 10;
   width: 100%;
   background-color: gray;
   color: white;
