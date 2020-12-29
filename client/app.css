@@ -158,10 +158,12 @@ h2 {
   z-index: -1;
 }
 .footer {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   background: #ddd;
-  margin-top: 20px;
+  overflow: hidden;
+  }
+  
 }
 
 body, html {
