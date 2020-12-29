@@ -2,13 +2,15 @@
 .header {
   padding: 30px;
   text-align: center;
-  background: blue;}
-	.header h1 {
+  background: blue;
+}
+.header h1 {
   font-size: 50px;}
-	.topnav {
+.topnav {
   overflow: hidden;
-  background-color: #333;}
-	/* Style the topnav links */
+  background-color: #333;
+}
+/* Style the topnav links */
 .topnav a {
   float: right;
   display: block;
@@ -160,8 +162,8 @@ h2 {
 .footer {
   padding: 5px;
   text-align: center;
-  background: #ddd;
-  overflow: hidden;
+  background-color: gray;
+ 
   }
   
 }
