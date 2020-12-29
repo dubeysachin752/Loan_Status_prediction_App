@@ -74,7 +74,7 @@ h2 {
 }
 
 .location{
-   border-left: 6px solid blue;
+  border-left: 6px solid blue;
   background-color: lightgrey;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
@@ -89,7 +89,7 @@ h2 {
   box-sizing: border-box;
   font-size: 15px;
   height: 35px;
-  border-radius: 5px;
+  
 }
 
 .submit{
